@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  font-family: "Plus Jakarta Sans";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+.containerTitleImg {
+  position: relative;
+}
+.containerTitleImg div {
+  gap: 20px;
+  position: absolute;
+}
+.containerTitleImg h1 {
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 74px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  color: #363636;
+}
+.containerTitleImg span {
+  color: #549663;
+  font-weight: 800;
+}
+.containerTitleImg p {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 128%;
+}
+.containerTitleImg img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+/* First Offer Section */
+.containerfirstOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textDiv {
+  padding: 60px 0px 40px 0;
+  gap: 20px;
+}
+.textDiv h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #363636;
+}
+.textDiv span {
+  color: #549663;
+  font-weight: 800;
+}
+.textDiv p {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #363636;
+}
+.buyersPlanDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+/* First */
+.containerPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.planOneHeadline {
+  padding: 22px 44px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #363636;
+  background: #f0d8a8;
+  border-radius: 10px 10px 0px 0px;
+  align-self: stretch;
+}
+.planOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  background: #ffffff;
+  border-width: 0px 2px 2px 2px;
+  border-style: solid;
+  border-color: #f1f0f5;
+  border-radius: 0px 0px 15px 15px;
+  align-self: stretch;
+}
+.planOneTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.imagesDiv {
+  position: relative;
+}
+.days90 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 217px;
+  top: -10px;
+  z-index: 1;
+}
+.planOneSave {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.planOnePrice {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 50px;
+  text-align: center;
+  color: #549663;
+  padding-bottom: 30px;
+}
+.planOneButton {
+  padding: 11px 85px;
+  background: #ffd800;
+  border-radius: 15px;
+  border: none;
+}
+.planOneButton p {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #363636;
+  padding-bottom: 5px;
+}
+.planOneButton span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #363636;
+}
+.regularPrice {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #363636;
+  padding: 5px 0px 20px 0px;
+}
+.regularPrice span {
+  text-decoration: line-through;
+}
+/* Second */
+.planTwoHeadline {
+  padding: 22px 56px;
+  color: #ffffff;
+  background: #549663;
+}
+.planTwoTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.planTwoTitle span {
+  color: red;
+}
+.planTwo {
+  background: rgba(230, 236, 224, 0.5);
+}
+.planTwoButton {
+  padding: 11px 100px;
+}
+.moneyBackGuarantee {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 30px 0px 60px 0px;
+}
+.moneyBackGuarantee p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #363636;
+}
+
+/* Headline Green Bar */
+.headlineGreenBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 28px;
+  width: 100vw;
+  max-width: 1920px;
+  height: 242px;
+  background: #549663;
+  font-weight: 400;
+  line-height: 56px;
+  color: #ffffff;
+}
+.headlineGreenBar p {
+  font-size: 40px;
+}
+.headlineGreenBar span {
+  font-size: 50px;
+}
+.headlineGreenBar div {
+  position: relative;
+}
+.headlineGreenBar img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  left: -38px;
+  top: 10px;
+}
+
+/* Cards Section */
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 49px;
+  width: 100vw;
+  max-width: 1920px;
+  height: 2017px;
+  background: #f1f0f5;
+}
+.rowOfCards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100vw;
+  max-width: 570px;
+}
+.card img {
+  border-radius: 15px;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rowOfCards h3 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #549663;
+}
+.cardText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0px 20px 10px;
+}
+.cardItalic {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #d43b4a;
+  padding-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .planOneHeadline,
+  .planTwoHeadline {
+    padding: 22px 0px;
+  }
+  .planOneButton,
+  .planTwoButton {
+    padding: 11px 20px;
+  }
+  .moneyBackGuarantee {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fiveTea {
+    width: 310px;
+  }
+}
+@media (max-width: 507px) {
+  .headlineGreenBar img {
+    top: -15px;
+  }
+}
+@media (max-width: 750px) {
+  .buyersPlanDiv {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .containerTitleImg h1 {
+    font-size: 52px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .containerTitleImg p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .containerTitleImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 900px) {
+  .containerTitleImg div {
+    left: 18%;
+    top: 14%;
+  }
+}
+@media (max-width: 1200px) {
+  .rowOfCards {
+    flex-direction: column;
+  }
+}
