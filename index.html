@@ -205,7 +205,7 @@
 
       <!-- BUY NOW -->
       <div class="containerBuyNow">
-        <button>BUY NOW</button>
+        <button onclick="upperScroll()">BUY NOW</button>
         <div>
           <img src="assets/90DaysMini.png" />
           <p>
@@ -569,7 +569,7 @@
 
     <!-- Offers, Testemonials, Text -->
     <div class="containerSecondOffer">
-      <div class="buyersPlanDiv">
+      <div id="buyNowPlan" class="buyersPlanDiv">
         <!-- First -->
         <div class="containerPlan">
           <p class="planOneHeadline">ONE TIME PURCHASE</p>
@@ -854,7 +854,7 @@
         </div>
       </div>
       <div class="containerBuyNow">
-        <button>BUY NOW</button>
+        <button onclick="lowerScroll()">BUY NOW</button>
         <div>
           <img src="assets/90DaysMini.png" />
           <p>
@@ -865,7 +865,7 @@
       </div>
     </div>
 
-    <!-- Green Bar -->
+    <!-- Last Green Bar -->
     <div class="greenBar">
       <p>
         <span><strong>EXPERIENCE THE TRANSFORMATION FOR YOURSELF</strong></span>
@@ -876,7 +876,7 @@
     </div>
 
     <!-- Offers -->
-    <div class="containerThirdOffer">
+    <div id="buyNowSection" class="containerThirdOffer">
       <div class="buyersPlanDiv">
         <!-- First -->
         <div class="containerPlan">
@@ -1055,11 +1055,11 @@
         <!-- First -->
         <div class="faqCard">
           <p class="faqCardHeader">
-            What are the ingredients in GREEN&LEAN?<button>
+            What are the ingredients in GREEN&LEAN?<button onclick="myFunc(0)">
               <img src="assets/arrowFAQ.png" alt="arrowFAQ" />
             </button>
           </p>
-          <div class="faqCardText">
+          <div id="firstFAQ" class="faqCardTextShowStart">
             <p class="faqPadding">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -1077,11 +1077,11 @@
         <!-- Second -->
         <div class="faqCard">
           <p class="faqCardHeader">
-            What are the ingredients in GREEN&LEAN?<button>
+            What are the ingredients in GREEN&LEAN?<button onclick="myFunc(1)">
               <img src="assets/arrowFAQ.png" alt="arrowFAQ" />
             </button>
           </p>
-          <div class="faqCardText">
+          <div id="secondFAQ" class="faqCardText">
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -1099,11 +1099,11 @@
         <!-- Third -->
         <div class="faqCard">
           <p class="faqCardHeader">
-            How many servings per pouch?<button>
+            How many servings per pouch?<button onclick="myFunc(2)">
               <img src="assets/arrowFAQ.png" alt="arrowFAQ" />
             </button>
           </p>
-          <div class="faqCardText">
+          <div id="thirdFAQ" class="faqCardText">
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -1121,11 +1121,11 @@
         <!-- Fourth -->
         <div class="faqCard">
           <p class="faqCardHeader">
-            Is there any dairy, gluten, or soy?<button>
+            Is there any dairy, gluten, or soy?<button onclick="myFunc(3)">
               <img src="assets/arrowFAQ.png" alt="arrowFAQ" />
             </button>
           </p>
-          <div class="faqCardText">
+          <div id="fourthFAQ" class="faqCardText">
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -1143,11 +1143,11 @@
         <!-- Fifth -->
         <div class="faqCard">
           <p class="faqCardHeader">
-            Will GREEN&LEAN upset my stomach?<button>
+            Will GREEN&LEAN upset my stomach?<button onclick="myFunc(4)">
               <img src="assets/arrowFAQ.png" alt="arrowFAQ" />
             </button>
           </p>
-          <div class="faqCardText">
+          <div id="fifthFAQ" class="faqCardText">
             <p>
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur magni dolores eos qui ratione

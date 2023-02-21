@@ -2,6 +2,9 @@
   margin: 0;
   font-family: "Plus Jakarta Sans";
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -792,7 +795,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
   width: 100%;
   max-width: 1170px;
 }
@@ -804,6 +807,8 @@ button:hover {
   align-items: center;
   border: 2px solid #549663;
   border-radius: 15px;
+  width: 100%;
+  max-width: 1170px;
 }
 .faqCardHeader {
   display: flex;
@@ -820,8 +825,22 @@ button:hover {
   line-height: 30px;
   color: #ffffff;
 }
-.faqCardText {
+.faqCardTextShowStart {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 30px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.faqCardText {
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -869,7 +888,10 @@ button:hover {
 @media (max-width: 507px) {
   .greenBar p {
     font-size: 29px;
-    line-height: 44px;
+    line-height: 50px;
+  }
+  .greenBar img {
+    top: -10px;
   }
   .headlineGreenBar img {
     top: -15px;
@@ -907,11 +929,17 @@ button:hover {
     font-size: 15px;
     line-height: 20px;
   }
+  .card {
+    text-align: center;
+  }
 }
 
 @media (max-width: 750px) {
-  .buyersPlanDiv {
+  .buyersPlanDiv,
+  .moneyBackGuarantee,
+  .containerBuyNow div {
     flex-direction: column;
+    align-items: center;
   }
 }
 
