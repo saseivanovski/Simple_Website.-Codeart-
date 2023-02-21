@@ -9,6 +9,15 @@ body {
   align-items: center;
   overflow-x: hidden;
 }
+.greyBg {
+  background: #f1f0f5;
+  padding-top: 60px;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
 
 /* Header Section */
 .containerTitleImg {
@@ -46,6 +55,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  max-width: 1920px;
 }
 .textDiv {
   padding: 60px 0px 40px 0;
@@ -199,7 +210,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
   gap: 15px;
   padding: 30px 0px 60px 0px;
 }
@@ -209,6 +219,10 @@ body {
   line-height: 28px;
   text-align: center;
   color: #363636;
+}
+.moneyBackGuarantee img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Headline Green Bar */
@@ -250,11 +264,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px;
+  padding: 100px 0px 60px;
   gap: 49px;
   width: 100vw;
   max-width: 1920px;
-  height: 2017px;
   background: #f1f0f5;
 }
 .rowOfCards {
@@ -290,12 +303,543 @@ body {
   line-height: 28px;
   padding: 0px 20px 10px;
 }
+.cardLongText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0px 20px;
+}
 .cardItalic {
   font-weight: 800;
   font-size: 20px;
   line-height: 28px;
   color: #d43b4a;
   padding-top: 10px;
+}
+.cardItalicLeft {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #d43b4a;
+}
+.containerBuyNow {
+  width: 100vw;
+  max-width: 742px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.containerBuyNow button {
+  padding: 25px 0px;
+  width: 100vw;
+  max-width: 600px;
+  height: 80px;
+  background: #ffd800;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  border-style: none;
+}
+.containerBuyNow div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.containerBuyNow p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Testemonials */
+.containerTestemonials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 1170px;
+}
+.testemonialCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 20px;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 570px;
+}
+.testemonialQuotes {
+  position: absolute;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 0px;
+}
+.testemonialText {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.testemonialRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.testemonialRating p {
+  width: 38px;
+  height: 28px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #549663;
+}
+.testemonialRating img {
+  width: 91.66px;
+  height: 15.22px;
+}
+
+/* Ingredients Section */
+.containerIngredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1920px;
+}
+.ingredientsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1170px;
+}
+.ingredientsHeader h2 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #549663;
+}
+.ingredientsHeader p {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+}
+.allIngredients {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ingredientCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 20px 30px;
+  gap: 30px;
+  background: #f7f7f7;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.ingredientsDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 640px;
+}
+.ingredientsDescription h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #549663;
+}
+.ingredientsDescription p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.ingredientsDescription li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.ingredientCard img {
+  width: 100%;
+  max-width: 440px;
+  object-fit: cover;
+}
+
+/* Green Bar */
+.greenBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 28px;
+  width: 100vw;
+  max-width: 1920px;
+  height: 182px;
+  background: #549663;
+}
+.greenBar p {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffffff;
+}
+.greenBar div {
+  position: relative;
+}
+.greenBar img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  left: -38px;
+  top: 10px;
+}
+
+/* Offers, Testemonials, Text */
+.containerSecondOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 1920px;
+  padding-top: 80px;
+}
+.moneyBackGuaranteeSecondOffer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 0px 42px 0px;
+}
+.moneyBackGuaranteeSecondOffer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #363636;
+}
+.moneyBackGuaranteeSecondOffer img {
+  width: 40px;
+  height: 40px;
+}
+/* Gray Testemonials */
+.testemonialCardGray {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 20px;
+  gap: 20px;
+  background: #f1f0f5;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 570px;
+}
+/* Text */
+.containerPromotionalText {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 40px 10px;
+}
+.containerPromotionalText p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.containerPromotionalText span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #549663;
+}
+
+/* Green Promotion */
+.greenPromotion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1920px;
+  padding-bottom: 60px;
+}
+.containerGreenPromotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 40px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: #549663;
+  max-width: 1250px;
+  color: #ffffff;
+  position: relative;
+}
+.containerGreenPromotion h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+.containerGreenPromotion p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.greenPromotionRow {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.greenPromotionFirstText {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.oneTea {
+  z-index: 1;
+  height: 386.45px;
+}
+.greenPromotionSecondText {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.vector {
+  position: absolute;
+  opacity: 0.2;
+  width: 500px;
+  height: 450px;
+  bottom: 0;
+  right: 0;
+}
+
+/* Why Green And Lean */
+.containerWhyGreenAndLean {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 50px;
+  width: 100%;
+  max-width: 1920px;
+  background: #f1f0f5;
+}
+.whyGreenAndLeanHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.whyGreenAndLeanHeader h3 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #549663;
+}
+.whyGreenAndLeanHeader p {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+}
+.whyGreenAndLeanRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+}
+.whyGreenAndLeanRow p {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+.leftFeatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  text-align: right;
+}
+.rightFeatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  text-align: left;
+}
+.checked {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Safe And Effective */
+.containerSafeAndEffective {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1920px;
+  background-image: url("assets/colorful.jpg");
+  background-color: #f0d8a8;
+}
+.containerSafeAndEffective h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+.safeAndEffectiveRow {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 970px;
+  text-align: center;
+}
+.safeAndEffectiveCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  gap: 20px;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 470px;
+}
+.safeAndEffectiveGreen {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: #549663;
+  padding-bottom: 10px;
+}
+.safeAndEffectiveText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0px 20px;
+}
+
+/* Third And Fourth Offers */
+.containerThirdOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 1920px;
+  padding: 100px 0px 20px 0px;
+}
+.containerFourthOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 1920px;
+  padding: 60px 0px 20px 0px;
+}
+
+/* FAQ */
+.containerFAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1920px;
+  background: #f1f0f5;
+}
+.containerFAQ h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+.allFAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1170px;
+}
+.faqCard {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #549663;
+  border-radius: 15px;
+}
+.faqCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 20px 20px;
+  background: #549663;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.faqCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 30px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.faqCardHeader button {
+  background: #549663;
+  border: none;
+}
+.faqPadding {
+  padding-bottom: 18px;
 }
 
 /* Media Queries */
@@ -308,24 +852,69 @@ body {
   .planTwoButton {
     padding: 11px 20px;
   }
-  .moneyBackGuarantee {
+  .moneyBackGuarantee,
+  .containerBuyNow div {
     flex-direction: column;
     align-items: center;
   }
-  .fiveTea {
+  .fiveTea,
+  .oneTea {
     width: 310px;
   }
+  .ingredientCard {
+    padding: 0px;
+  }
 }
+
 @media (max-width: 507px) {
+  .greenBar p {
+    font-size: 29px;
+    line-height: 44px;
+  }
   .headlineGreenBar img {
     top: -15px;
   }
+  .greenPromotion,
+  .greenPromotion h3,
+  .greenPromotion p,
+  .greenPromotion img,
+  .containerWhyGreenAndLean p,
+  .bigTea {
+    width: 240px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .containerWhyGreenAndLean h3 {
+    width: 240px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .overflow {
+    overflow-wrap: break-word;
+  }
+  .checked {
+    justify-content: space-between;
+  }
+  .greyBg {
+    background: white;
+  }
 }
+
+@media (max-width: 630px) {
+  .testemonialCard,
+  .testemonialCardGray {
+    width: 240px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
 @media (max-width: 750px) {
   .buyersPlanDiv {
     flex-direction: column;
   }
 }
+
 @media (max-width: 800px) {
   .containerTitleImg h1 {
     font-size: 52px;
@@ -338,22 +927,49 @@ body {
     text-align: center;
   }
 }
+
 @media (max-width: 900px) {
-  .containerTitleImg {
+  .containerTitleImg,
+  .moneyBackGuaranteeSecondOffer,
+  .safeAndEffectiveRow {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  .ingredientCard {
+    padding: 10px;
+    text-align: center;
+  }
+  .containerPromotionalText {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
+
 @media (min-width: 900px) {
   .containerTitleImg div {
     left: 18%;
     top: 14%;
   }
 }
+
+@media (max-width: 925px) {
+  .greenBar img {
+    top: -15px;
+  }
+}
+
 @media (max-width: 1200px) {
-  .rowOfCards {
+  .rowOfCards,
+  .containerTestemonials,
+  .ingredientCard,
+  .greenPromotionRow,
+  .greenPromotionSecondText,
+  .whyGreenAndLeanRow {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
