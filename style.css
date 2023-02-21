@@ -514,7 +514,6 @@ button:hover {
   position: absolute;
   width: 80px;
   height: 80px;
-  z-index: 1;
   left: -38px;
   top: 10px;
 }
@@ -817,13 +816,16 @@ button:hover {
   align-self: stretch;
   padding: 20px 20px;
   background: #549663;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
   border: none;
   font-style: normal;
   font-weight: 800;
   font-size: 22px;
   line-height: 30px;
   color: #ffffff;
+}
+#firstHeader {
+  border-radius: 10px 10px 0px 0px;
 }
 .faqCardTextShowStart {
   display: flex;
@@ -861,6 +863,59 @@ button:hover {
   padding-bottom: 18px;
 }
 
+/* Footer */
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1920px;
+  text-align: center;
+}
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+.footerCol hr {
+  width: 100%;
+  max-width: 1170px;
+  border: 2px solid #f1f0f5;
+}
+.footerRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  gap: 40px;
+}
+.footerLoremIpsum {
+  width: 100%;
+  max-width: 970px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footerBox {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #333333;
+  width: 100%;
+  max-width: 970px;
+  padding: 10px 0px;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .planOneHeadline,
@@ -887,11 +942,9 @@ button:hover {
 
 @media (max-width: 507px) {
   .greenBar p {
-    font-size: 29px;
-    line-height: 50px;
-  }
-  .greenBar img {
-    top: -10px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
   }
   .headlineGreenBar img {
     top: -15px;
@@ -986,6 +1039,9 @@ button:hover {
 @media (max-width: 925px) {
   .greenBar img {
     top: -15px;
+  }
+  .footerRow {
+    flex-direction: column;
   }
 }
 
